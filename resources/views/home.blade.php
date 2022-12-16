@@ -7,10 +7,10 @@
         <div class="container">
             <div class="row justify-content-between">
                 @foreach ($movies as $movie)
-                    <div class="card col-4 mb-5" style="width: 18rem;">
+                    <div class="card col-4 mb-5 pt-2" style="width: 18rem;">
                         <img src="{{ $movie->image }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $movie->title }}</h5>
+                            <h5 class="card-title">Titolo: {{ $movie->title }}</h5>
                         </div>
                     </div>
                 @endforeach
